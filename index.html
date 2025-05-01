@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Felipe Walter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Scroll suave para seções
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Portifólio</h1>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container center">
+      <img src="imagens/Eu.jpg" alt="Minha Foto" class="perfil" />
+      <h1>Olá, eu sou Felipe Walter</h1>
+      <p>Estudante de Ciência da computação na ATITUS</p>
+      <a href="#contato" class="btn">Fale Comigo</a>
+    </div>
+  </header>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>SOlá, meu nome é Felipe Walter, tenho 19 anos, moro em Passo Fundo e atualmente estou cursando o segundo semestre de Ciência da Computação. Curto muito tecnologia e estou sempre em busca de novos conhecimentos para me desenvolver na área.</p>
+    </div>
+  </section>
+
+  <section id="habilidades" class="section alt">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="grid">
+        <div class="card">HTML</div>
+        <div class="card">Python</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="section">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Corrida Maluca</h3>
+          <p>Trabalho de faculdade feito em Python</p>
+          <a href="https://github.com/diegomartinssanchez/corridaMaluca" target="_blank" class="btn small">Ver Projeto</a>
+        </div>
+  </section>
+
+  <section id="contato" class="section alt">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Fale comigo por:</p>
+      <ul>
+        <li>Email: felipewalter708@gmail.com</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/felipeswalter" target="_blank">/FelipeWalter</a></li>
+        <li>GitHub: <a href="https://github.com/FelipeWalter" target="_blank">/FelipeWalter</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container center">
+      <p>© 2025 Felipe Walter. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
